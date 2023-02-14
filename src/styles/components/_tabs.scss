@@ -66,10 +66,7 @@ ul.tabs-nav {
 
 .tabs__item	{
 	overflow: hidden;
-
-	@include mediaUp(md) {
-		display: none;
-	}
+	display: none;
 }
 
 .tabs__item.is-open {
