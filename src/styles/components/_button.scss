@@ -1,0 +1,43 @@
+.button {
+	width: auto;
+	max-width: 100%;
+	padding: 15px 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: .75rem;
+	border: none;
+	background: var(--brand) none;
+	border-radius: var(--radius-sm);
+	color: var(--intense);
+	font-size: .875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	transition:
+		background-color var(--duration-sm),
+		border-color var(--duration-sm),
+		color var(--duration-sm),
+		box-shadow var(--duration-sm),
+		transform var(--duration-sm);
+}
+
+.button:active {
+	transform: translateY(1px);
+}
+
+.button--circle {
+	width: 34px;
+	height: 34px;
+	padding: 0;
+	border-radius: 100%;
+	background-color: var(--inverse);
+}
+
+.button--circle:hover {
+	background-color: var(--brand);
+}

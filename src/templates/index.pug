@@ -1,0 +1,37 @@
+extends base/layout.pug
+
+block variables
+	- var currentUrl = '/'
+
+block main
+	<section class="section tabs">
+		<div class="container">
+			<ul class="tabs-nav">
+				<li class="tabs-nav__item is-open"><a href="#tab1">Популярные товары</a></li>
+				<li class="tabs-nav__item"><a href="#tab2">Недавно купили</a></li>
+				<li class="tabs-nav__item"><a href="#tab3">Вас может заинтересовать</a></li>
+			</ul>
+		</div>
+
+		<div class="tabs__item is-open" id="#tab1">
+			<div class="container">
+
+				include partials/products-slider
+
+			</div>
+		</div>
+		<div class="tabs__item" id="#tab2">
+			<div class="container">
+
+				include partials/products-slider
+
+			</div>
+		</div>
+		<div class="tabs__item" id="#tab3">
+			<div class="container">
+
+				include partials/products-slider
+
+			</div>
+		</div>
+	</section>

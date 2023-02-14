@@ -1,0 +1,28 @@
+.sticker {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	place-items: center;
+	color: var(--inverse);
+	font-weight: bold;
+	font-size: .8125rem;
+}
+
+.sticker > * {
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+
+.sticker > div {
+	padding-top: 1px;
+}
+
+.sticker__bg {
+	width: 100%;
+	height: 100%;
+	fill: var(--danger);
+}
+
+.sticker--new .sticker__bg {
+	fill: var(--primary);
+}

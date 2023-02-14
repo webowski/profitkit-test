@@ -1,0 +1,41 @@
+.input-quantity {
+	padding: 10px 5px;
+	min-width: 100px;
+	display: flex;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-sm);
+}
+
+.input-quantity:focus-within {
+	outline: none;
+}
+
+.input-quantity button {
+	@include buttonReset;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.input-quantity input:focus-visible {
+	outline: none;
+}
+
+.input-quantity input {
+	@include inputReset;
+	width: 32px;
+	line-height: 1.1;
+	flex: 1;
+	text-align: center;
+
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		appearance: none;
+		margin: 0;
+	}
+}
+

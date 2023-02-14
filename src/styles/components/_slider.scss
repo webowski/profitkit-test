@@ -1,0 +1,132 @@
+@import 'swiper/swiper';
+
+.slider {
+	position: relative;
+	user-select: none;
+	width: 100%;
+	display: grid;
+}
+
+.slider .swiper-container {
+	min-width: 0; // fix for "Swiper vs. Grid"
+}
+
+.slider__nav {
+	--navPosition: -52px;
+	@include buttonReset;
+	position: absolute;
+	top: calc(50% - 20px);
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-sm);
+	background-color: var(--bg);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition:
+		background-color var(--duration-md),
+		border-color var(--duration-md);
+
+	&:hover {
+		background-color: var(--brand);
+		border-color: var(--brand);
+	}
+
+	.icon {
+		position: relative;
+		left: 1px;
+		width: 12px;
+		height: 22px;
+	}
+
+	@include mediaUp(lg) {
+		--navPosition: -60px;
+		display: flex;
+	}
+
+	@include mediaUp(xxl) {
+		--navPosition: -86px;
+	}
+}
+
+.slider__nav.-prev {
+	left: var(--navPosition);
+
+	.icon {
+		transform: rotate(-180deg);
+		left: -1px;
+	}
+}
+
+.slider__nav.-next {
+	right: var(--navPosition);
+}
+
+.slider__nav.swiper-button-disabled {
+	visibility: hidden;
+}
+
+.slider--products .swiper-container {
+	@include mediaUp(md) {
+		overflow: hidden;
+	}
+}
+
+.slider--products .swiper-slide {
+	width: auto;
+}
+
+.slider--card {
+	position: relative;
+	border-top-left-radius: calc(var(--radius-sm) - 1px);
+	border-top-right-radius: calc(var(--radius-sm) - 1px);
+	overflow: hidden;
+}
+
+.slider--card .swiper-container {
+	overflow: hidden;
+}
+
+.slider--card .swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
+.slider--card .slider__pagination {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider.slider--card .slider__pagination .swiper-pagination-bullet {
+	display: block;
+	padding: 10px 2px;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2.04px;
+		position: relative;
+		border-radius: 2px;
+		background-color: rgba(0,0,0,.2);
+		will-change: background-color;
+	}
+
+	&:hover::after {
+		background-color: rgba(0,0,0,.6);
+	}
+
+	&.swiper-pagination-bullet-active::after {
+		background-color: var(--brand);
+	}
+}
+

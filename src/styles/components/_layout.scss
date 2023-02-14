@@ -1,0 +1,11 @@
+body {
+	background-color: var(--bg);
+}
+
+.wrap {
+	min-height: 100vh;
+	min-height: 100dvh;
+	position: relative;
+	display: grid;
+	align-items: center;
+}

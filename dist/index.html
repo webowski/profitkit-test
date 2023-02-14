@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ProfitKit Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bundle.min.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="section tabs">
+        <div class="container">
+          <ul class="tabs-nav">
+            <li class="tabs-nav__item is-open"><a href="#tab1">Популярные товары</a></li>
+            <li class="tabs-nav__item"><a href="#tab2">Недавно купили</a></li>
+            <li class="tabs-nav__item"><a href="#tab3">Вас может заинтересовать</a></li>
+          </ul>
+        </div>
+        <div class="tabs__item is-open" id="#tab1">
+          <div class="container">
+            <div class="slider slider--products" data-slides="4" data-slides-xl="4" data-slides-lg="3"
+              data-slides-md="2" data-slides-sm="auto" data-slides-xs="auto" data-gap="20">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="product-card__placeholder"><img src="images/photo-placeholder.png"></div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Тарелка керамическая ручной работы ⌀&nbsp;12</h4>
+                        <div class="product-card__price">
+                          <div class="price">600 ₽</div>
+                          <div class="price price--old">810 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--hit"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>ХИТ</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Умные часы SMARTWATCH XM 109 черный</h4>
+                        <div class="product-card__price">
+                          <div class="price">12 999 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--new"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>NEW</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Золотое кольцо МАЛИКА с аметистом и фианитами</h4>
+                        <div class="product-card__price">
+                          <div class="price">15 700 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <button class="slider__nav -prev"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+              <button class="slider__nav -next"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__item" id="#tab2">
+          <div class="container">
+            <div class="slider slider--products" data-slides="4" data-slides-xl="4" data-slides-lg="3"
+              data-slides-md="2" data-slides-sm="auto" data-slides-xs="auto" data-gap="20">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="product-card__placeholder"><img src="images/photo-placeholder.png"></div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Тарелка керамическая ручной работы ⌀&nbsp;12</h4>
+                        <div class="product-card__price">
+                          <div class="price">600 ₽</div>
+                          <div class="price price--old">810 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--hit"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>ХИТ</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Умные часы SMARTWATCH XM 109 черный</h4>
+                        <div class="product-card__price">
+                          <div class="price">12 999 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--new"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>NEW</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Золотое кольцо МАЛИКА с аметистом и фианитами</h4>
+                        <div class="product-card__price">
+                          <div class="price">15 700 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <button class="slider__nav -prev"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+              <button class="slider__nav -next"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__item" id="#tab3">
+          <div class="container">
+            <div class="slider slider--products" data-slides="4" data-slides-xl="4" data-slides-lg="3"
+              data-slides-md="2" data-slides-sm="auto" data-slides-xs="auto" data-gap="20">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="product-card__placeholder"><img src="images/photo-placeholder.png"></div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Тарелка керамическая ручной работы ⌀&nbsp;12</h4>
+                        <div class="product-card__price">
+                          <div class="price">600 ₽</div>
+                          <div class="price price--old">810 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-3.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--hit"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>ХИТ</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Умные часы SMARTWATCH XM 109 черный</h4>
+                        <div class="product-card__price">
+                          <div class="price">12 999 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-4.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__stickers">
+                          <div class="sticker sticker--new"><svg width="48" height="50" viewBox="0 0 48 50"
+                              class="icon icon--star sticker__bg">
+                              <path
+                                d="M22.8214 0.859771C23.5236 0.347495 24.4764 0.347495 25.1786 0.859771L30.0382 4.4046C30.3815 4.65504 30.7957 4.78961 31.2207 4.7888L37.2357 4.77735C38.105 4.7757 38.8758 5.33571 39.1428 6.16294L40.9907 11.8871C41.1212 12.2916 41.3772 12.6439 41.7215 12.893L46.5945 16.4193C47.2987 16.9289 47.5931 17.835 47.3229 18.6612L45.4533 24.3783C45.3212 24.7823 45.3212 25.2177 45.4533 25.6217L47.3229 31.3388C47.5931 32.165 47.2987 33.0711 46.5945 33.5807L41.7215 37.107C41.3772 37.3561 41.1212 37.7084 40.9907 38.1129L39.1428 43.8371C38.8758 44.6643 38.105 45.2243 37.2357 45.2226L31.2207 45.2112C30.7957 45.2104 30.3815 45.345 30.0382 45.5954L25.1786 49.1402C24.4764 49.6525 23.5236 49.6525 22.8214 49.1402L17.9618 45.5954C17.6185 45.345 17.2043 45.2104 16.7793 45.2112L10.7643 45.2226C9.89502 45.2243 9.12422 44.6643 8.85718 43.8371L7.00932 38.1129C6.87877 37.7084 6.62279 37.3561 6.27852 37.107L1.4055 33.5807C0.701283 33.0711 0.406866 32.165 0.677056 31.3388L2.5467 25.6217C2.67879 25.2177 2.67879 24.7823 2.5467 24.3783L0.677056 18.6612C0.406866 17.835 0.701284 16.9289 1.4055 16.4193L6.27852 12.893C6.62279 12.6439 6.87877 12.2916 7.00932 11.8871L8.85718 6.16294C9.12422 5.33571 9.89502 4.7757 10.7643 4.77735L16.7793 4.7888C17.2043 4.78961 17.6185 4.65504 17.9618 4.4046L22.8214 0.859771Z" />
+                            </svg>
+                            <div>NEW</div>
+                          </div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Золотое кольцо МАЛИКА с аметистом и фианитами</h4>
+                        <div class="product-card__price">
+                          <div class="price">15 700 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__figure">
+                        <div class="slider slider--card" data-slides="1" data-bullets-hover="1" data-nested="1">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="media/product-2.jpg" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="slider__pagination"></div>
+                        </div>
+                        <div class="product-card__side-actions">
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--heart">
+                              <path
+                                d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+                                stroke="black" stroke-width="2" />
+                            </svg></button>
+                          <button class="button button--circle"><svg width="20" height="20" viewBox="0 0 20 20"
+                              fill="none" class="icon icon--scales">
+                              <path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke="black"
+                                stroke-width="1.5" stroke-linejoin="round" />
+                              <circle cx="9.99998" cy="3.65061" r="1.5532" stroke="black" stroke-width="1.5" />
+                              <path d="M11.9136 3.53931H13.3994" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path d="M6.59998 3.53931H8.08582" stroke="black" stroke-width="1.5"
+                                stroke-linecap="round" />
+                              <path
+                                d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                              <path
+                                d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+                                stroke="black" stroke-width="1.5" />
+                            </svg></button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h4>Кашпо для цветов керамическое СИМПЛГРЕЙ</h4>
+                        <div class="product-card__price">
+                          <div class="price">450 ₽</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <div class="input-quantity">
+                            <button class="do-step-down" type="button"><svg width="12" height="2" viewBox="0 0 12 2"
+                                fill="none" class="icon icon--minus">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+                                  fill="#8D9295" />
+                              </svg></button>
+                            <input type="number" min="1" value="1">
+                            <button class="do-step-up" type="button"><svg width="12" height="12" viewBox="0 0 12 12"
+                                fill="none" class="icon icon--plus">
+                                <line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                                <line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+                                  stroke-linecap="round" />
+                              </svg></button>
+                          </div>
+                          <button class="button" type="button"><svg width="21" height="20" viewBox="0 0 21 20"
+                              class="icon icon--cart">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z" />
+                            </svg>В корзину</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <button class="slider__nav -prev"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+              <button class="slider__nav -next"><svg width="12" height="21" viewBox="0 0 12 21" fill="none"
+                  class="icon icon--chevron">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.312197 0.27405C-0.0887365 0.65388 -0.105843 1.28681 0.273989 1.68775L8.62244 10.5L0.273989 19.3123C-0.105843 19.7132 -0.0887365 20.3461 0.312197 20.726C0.713129 21.1058 1.34606 21.0887 1.72589 20.6877L11.3774 10.5L1.72589 0.312258C1.34606 -0.088675 0.713129 -0.105781 0.312197 0.27405Z"
+                    fill="black" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="scripts/bundle.min.js" defer></script>
+  </body>
+</html>

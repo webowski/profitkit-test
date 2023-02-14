@@ -1,0 +1,77 @@
+.tabs {
+	position: relative;
+}
+
+ul.tabs-nav {
+	@include listReset(true);
+	margin-bottom: 1.5625rem;
+
+	@include mediaUp(md) {
+		margin-bottom: 2.625rem;
+		display: flex;
+		align-items: center;
+		gap: 25px;
+	}
+}
+
+.tabs-nav__item {
+	font-size: .875rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	display: block;
+	order: 2;
+
+	@include mediaUp(lg) {
+		font-size: 1.125rem;
+		line-height: 2rem;
+	}
+
+	@include mediaUp(xl) {
+		font-size: 1.5rem;
+		line-height: 2.25rem;
+	}
+}
+
+.tabs-nav__item a {
+	text-decoration: underline dotted;
+	text-underline-position:under;
+	color: var(--secondary);
+}
+
+.tabs-nav__item a:hover {
+	color: var(--primary);
+}
+
+.tabs-nav__item.is-open {
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	order: 1;
+
+	@include mediaUp(lg) {
+		font-size: 1.5rem;
+	}
+
+	@include mediaUp(xl) {
+		font-size: 2.125rem;
+	}
+}
+
+.tabs-nav__item.is-open a {
+	text-decoration: none;
+	color: var(--intense);
+	pointer-events: none;
+}
+
+.tabs__item	{
+	overflow: hidden;
+
+	@include mediaUp(md) {
+		display: none;
+	}
+}
+
+.tabs__item.is-open {
+	display: block;
+}

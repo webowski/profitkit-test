@@ -1,0 +1,22 @@
+.icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	display: inline-block;
+	flex-shrink: 0;
+	transition:
+		fill var(--duration-sm),
+		transform var(--duration-sm),
+		stroke var(--duration-sm);
+}
+
+.icon--heart,
+.icon--scales {
+	width: 21px;
+	height: 21	px;
+}
+
+.icon--plus,
+.icon--minus {
+	width: 12px;
+	height: 12px;
+}

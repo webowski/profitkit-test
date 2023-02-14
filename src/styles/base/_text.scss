@@ -1,0 +1,127 @@
+html {
+	font-size: $rem;
+}
+
+body {
+	color: var(--major);
+	font-family: var(--fontMain);
+	font-size: var(--fontSize);
+	line-height: var(--lineHeight);
+}
+
+a {
+	color: var(--primary);
+	text-decoration: underline;
+	text-underline-position: under;
+	transition:
+		color var(--duration-sm),
+		border-color var(--duration-sm),
+		background-color var(--duration-sm),
+		opacity var(--duration-sm),
+		box-shadow var(--duration-sm);
+}
+
+a:is(:hover) {
+	text-decoration: none;
+}
+
+p {
+	max-width: 72ch;
+	@include flowMargin;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include mediaUp(md) {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+	@include flowMargin;
+	color: var(--intense);
+	line-height: 1.2;
+	font-weight: 700;
+
+	@include mediaUp(md) {
+		margin-top: 2rem;
+		margin-bottom: 1.25rem;
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5rem;
+
+	@include mediaUp(md) {
+		font-size: 2.5rem;
+	}
+}
+
+h2, .h2 {
+	font-size: 2.25rem;
+
+	@include mediaUp(md) {
+		font-size: 2.125rem;
+	}
+}
+
+h3, .h3 {
+	font-size: 1.75rem;
+
+	@include mediaUp(md) {
+		margin-top: 1.5rem;
+		margin-bottom: 1.25rem;
+		font-size: 1.75rem;
+	}
+}
+
+hr {
+	@include flowMargin;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
+ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-left: 0;
+	@include flowMargin;
+	list-style-type: none;
+}
+
+ul > li {
+	max-width: 778px;
+	position: relative;
+	margin-top: .5rem;
+	margin-left: 0;
+	padding-left: 1rem;
+
+	@include mediaUp(md) {
+		padding-left: 1.175rem;
+	}
+}
+
+ul > li:before {
+	@include pseudoBlock(6px, 6px);
+	top: .55rem;
+	left: 2px;
+	background-color: var(--major);
+	border-radius: 8px;
+}
+
+ul > li:first-child {
+	margin-top: 0;
+}
+
+ul > li > ul:first-child {
+	margin-top: 5px;
+}
+
+ul ul {
+	margin-top: 5px;
+}

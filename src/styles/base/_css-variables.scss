@@ -1,0 +1,33 @@
+:root {
+	// Text
+	--fontMain:             #{$fontMain};
+	--fontSize:             1rem;
+	--lineHeight:           1.57;
+
+	// Color
+	--brand:                #{$yellow};
+	--primary:              #{$blue};
+	--secondary:            #{$gray-550};
+	--danger:               #{$red};
+	--intense:              #{$black};
+	--major:                #{$gray-600};
+	--minor:                #{$gray-400};
+	--inverse:              #{$white};
+	--bg:                   #{$white};
+	--bg-2:                 #{$gray-100};
+	--border:               #{$gray-200};
+
+	// Dimensions
+	--containerMax:         #{$containerMax};
+	--sidePadding:          clamp(1.25rem, 7vw, 5rem);
+
+	// Shape
+	--radius-sm:            5px;
+
+	// Animation
+	--duration-sm:          0.12s;
+	--duration-md:          0.2s;
+	--duration-lg:          0.3s;
+	--duration-xl:          0.6s;
+	--duration-xxl:         1.0s;
+}
